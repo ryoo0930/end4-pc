@@ -130,17 +130,19 @@ AbstractBackgroundWidget {
 
                 ColumnLayout {
                     Layout.fillWidth: true
-                    Layout.alignment: Qt.AlignRight
+                    Layout.alignment: Qt.AlignHCenter
                     spacing: -4
                     StyledText {
-                        Layout.alignment: Qt.AlignRight
+                        Layout.fillWidth: true
+                        horizontalAlignment: Text.AlignHCenter
                         font.pixelSize: 42; font.weight: Font.Bold
                         font.features: { "tnum": 1 }
                         color: Appearance.colors.colOnPrimaryContainer
                         text: root.localTime
                     }
                     StyledText {
-                        Layout.alignment: Qt.AlignRight
+                        Layout.fillWidth: true
+                        horizontalAlignment: Text.AlignHCenter
                         font.pixelSize: Appearance.font.pixelSize.small
                         color: Appearance.colors.colOnPrimaryContainer
                         opacity: 0.7
